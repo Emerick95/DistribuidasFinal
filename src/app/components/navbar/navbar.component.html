@@ -1,0 +1,38 @@
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-7 py-4">
+                    <h4 class="text-white">Informaciòn</h4>
+                    <p class="text-muted"> Aplicacion para consumo API de NODE</p>
+                    <a class="text-white" href="https://distribuidasmongo.herokuapp.com/api/producto" target="_blank"><p>API</p></a>
+                </div>
+                <div class="col-sm-4 offset-md-1 py-4">
+                    <h4 class="text-white">Menú</h4>
+
+
+                    <li class="list-unstyled" routerLinkActive="active">
+                        <a class="nav-link text-white" [routerLink]="['/categoria']"> Categorias <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="list-unstyled" routerLinkActive="active">
+                        <a class="nav-link text-white" [routerLink]="['/producto']">Productos<span class="sr-only">(current)</span> </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+            <a class="navbar-brand">
+                <img src="assets/producto.png" width="50" height="50" alt="" loading="lazy">
+            </a>
+            <a [routerLink]="['/']" class="navbar-brand d-flex align-items-center">
+                <strong> Consumo-Node</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+            aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+</header>
